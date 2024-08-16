@@ -157,7 +157,7 @@ Shader "Unlit/SDF_cine" {
                 float3 o = _Position;
                 float3 dir = normalize(rotate_vector(float3(i.uv, 1), _Rotation));
 
-                float maxDist = 100;
+                float maxDist = 500;
                 float dist = 0;
 
                 float3 r = o;
@@ -179,7 +179,7 @@ Shader "Unlit/SDF_cine" {
                 // key light
                 float3  lig = normalize( float3(-0.1,  0.6,  -0.3) );
                 float3  hal = normalize( lig-dir );
-                float shad = shadow( r, lig, 0.01, 3.0, 0.1 );
+                float shad = shadow( r, lig, 0.01, 300.0, 0.1 );
                 float dif = clamp( dot( nor, lig ), 0.0, 1.0 ) * shad;
 
                 float spe = pow( clamp( dot( nor, hal ), 0.0, 1.0 ),16.0)*

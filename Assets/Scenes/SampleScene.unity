@@ -1838,7 +1838,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20f9829477ec5394b801cbbb8f24d2d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 15
   viewport: {fileID: 1118911617}
   camTF: {fileID: 963194228}
   camDist: 5

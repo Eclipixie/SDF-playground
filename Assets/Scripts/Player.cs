@@ -16,7 +16,7 @@ public class Player : MonoBehaviour {
 
     CinemachineComponentBase compBase;
     MaterialPropertyBlock mpb;
-    readonly int target = 144;
+    readonly int target = 120;
 
     float currentTime = 0f;
 
